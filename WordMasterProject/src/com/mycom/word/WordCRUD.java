@@ -42,7 +42,7 @@ public class WordCRUD implements ICRUD {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+ 
 	@Override
 	public int delete(Object obj) {
 		// TODO Auto-generated method stub
