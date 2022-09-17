@@ -53,7 +53,7 @@ public class WordCRUD implements ICRUD {
 	public void selectOne(int id) {
 		// TODO Auto-generated method stub
 		
-	}
+	}    
 	
 	public void listAll() {
 		System.out.println("--------------------------------");
