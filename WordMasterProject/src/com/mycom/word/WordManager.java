@@ -1,3 +1,6 @@
+/* 21701062 한창희 실전프로젝트1 Java CRUD 프로젝트
+ */
+
 package com.mycom.word;
 
 import java.util.Scanner;
@@ -29,20 +32,46 @@ public class WordManager {
 	}
 	
 	public void start() {
+		
+		wordCRUD.loadFile();
 		while(true) {
 		int menu = selectMenu();
 		if(menu == 0) break;
 		if(menu == 4){
 			// create
-			wordCRUD.addWord();
+			wordCRUD.addItem();
 		}
 		else if(menu == 1) {
 			// list
 			wordCRUD.listAll();
 			
 		}
-		System.out.println(menu);
+		else if(menu == 2) {
+			
+			wordCRUD.searchLevel();
+			
+		}
+		else if(menu == 3) {
+			
+			wordCRUD.searchWord();
+			
+		}
+		
+		else if(menu == 5) {
+			// update
+			wordCRUD.updateItem();
+			
+		}
+		else if(menu == 6) {
+			// delete
+			wordCRUD.deleteItem();
+		}
+		else if(menu == 7) {
+			// saveFile
+			wordCRUD.saveFile();
+	
 		}
 	}
 
 }
+	}
